@@ -14,3 +14,9 @@ def check_box():
 vote()
 check_box()
 vote()
+check_box()
+for i in range(3):
+    vote
+check_box()
+reset_box()
+check_box()
