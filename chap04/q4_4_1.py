@@ -2,7 +2,7 @@ vote_num=0
 def vote():
     print("投票します")
     global  vote_num
-    vote_num=0
+    vote_num+=1
 
 def reset_box():
     global vote_num
@@ -17,7 +17,7 @@ check_box()
 vote()
 check_box()
 for i in range(3):
-    vote
+    vote()
 check_box()
 reset_box()
 check_box()
