@@ -18,8 +18,7 @@ def generate_students_data(num_students=10):
         weight = random.randint(50, 80)
         students_data.append((name, height, weight))
         
-        if i == 0:
-            print('i,name,height,weight')
+        if i == 0: print('i,name,height,weight')
         if i < 2 or i == num_students - 1:
             print(i, name, height, weight)
         elif i == 2:
@@ -27,11 +26,17 @@ def generate_students_data(num_students=10):
             
     return students_data  # forループの外に出す
 
-students_data = generate_students_data(10)  # 関数名を統一
+students_data = generate_students_data(10)# 関数名を統一
+
+students_by_height = sorted(students_data,key=lambda s:s[1])
+students_by_weight = sorted(students_data,key=lambda s:s[2])
+
+
+
 print('\nsort by height')
 for student in students_by_height:
     print(student)
 
 print('\nsort by weight')
-for student in student_by_weight:
+for student in students_by_weight:
     print(student)

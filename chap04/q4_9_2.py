@@ -1,12 +1,13 @@
-import os , sys
-MAX=2
-print(sys,getdefaultencoding())
-print(os.path.basename(os.getwc())
-      for i in range(3)
+import os
+import sys
 
-      print(i,end=" ")
-      if MAX > = MAX
+MAX=2
+print(sys.getdefaultencoding())
+print(os.path.basename(os.getcwd()))
+for i in range(3):
+    print(i,end=" ")
+    if MAX>i:
         print(MAX)
-      else:
+    else:
         print("#")
 
