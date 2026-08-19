@@ -2,37 +2,37 @@ class Cylinder:
     '''円柱'''
     pi=3.14
 
-def __init__(self,radius=1,height=1):
-    '''円柱を特徴づける'''
-    self.radius=float(radius)
-    self.height=float(height)
+    def __init__(self,radius=1,height=1):
+        '''円柱を特徴づける'''
+        self.radius=float(radius)
+        self.height=float(height)
 
-def calc_base_area(self):
-    pi=Cylinder.pi
-    r=self.radius
-    return pi*r*r
-def calc_side_area(self):
-    pi=Cylinder.pi
-    r=self.radius
-    h=self.height
-    return 2*pi*r*h
-def calc_surface_area(self):
-    '''表面積'''
-    c=self.calc_base_area()
-    s=self.calc_side_area()
-    return 2*c+s
-def calc_volume(self):
-    '''体積を計算'''
-    c=self.calc_base_area()
-    h=self.height
-    return c*h
-def show_results(self):
-    '''属性と計算結果を見せる'''
-    r=self.radius
-    h=self.height
-    s=self.calc_surface_area()
-    v=self.calc_volume()
-    print('半径:{},高さ:{},表面積:{},体積:{}'.format(r,h,s,v))
+    def calc_base_area(self):
+        pi=Cylinder.pi
+        r=self.radius
+        return pi*r*r
+    def calc_side_area(self):
+        pi=Cylinder.pi
+        r=self.radius
+        h=self.height
+        return 2*pi*r*h
+    def calc_surface_area(self):
+        '''表面積'''
+        c=self.calc_base_area()
+        s=self.calc_side_area()
+        return 2*c+s
+    def calc_volume(self):
+        '''体積を計算'''
+        c=self.calc_base_area()
+        h=self.height
+        return c*h
+    def show_results(self):
+        '''属性と計算結果を見せる'''
+        r=self.radius
+        h=self.height
+        s=self.calc_surface_area()
+        v=self.calc_volume()
+        print('半径:{},高さ:{},表面積:{},体積:{}'.format(r,h,s,v))
 
 
 
